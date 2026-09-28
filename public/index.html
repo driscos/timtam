@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Penguin vs TimTam: which is better?</title>
+  <meta name="description" content="The battle of the chocolate biscuit bars. Vote for Penguin or TimTam and see who's winning.">
+  <meta property="og:title" content="Which is better: Penguin or TimTam?">
+  <meta property="og:description" content="The battle of the chocolate biscuit bars. Cast your vote and see who's winning.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#3b1f14">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍫</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap">
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/app.js"></script>
+  <!-- analytics -->
+</head>
+<body>
+  <main>
+    <h1>Which is better &ndash; <span class="name-penguin">Penguin</span> or <span class="name-timtam">TimTam</span> chocolate bars?</h1>
+    <p class="prompt" id="prompt" aria-live="polite">Choose your bar</p>
+
+    <div class="arena" id="arena" data-state="vote">
+      <button class="bar" type="button" data-choice="penguin" aria-label="Vote for Penguin">
+        <span class="count"><span class="crown" aria-hidden="true">👑</span><span class="count-n">0</span><span class="count-pct">0%</span></span>
+        <span class="bar-fill"><img src="/img/penguin.png" alt="Penguin chocolate biscuit bar" width="678" height="206"></span>
+        <span class="label">Penguin</span>
+      </button>
+      <button class="bar" type="button" data-choice="timtam" aria-label="Vote for TimTam">
+        <span class="count"><span class="crown" aria-hidden="true">👑</span><span class="count-n">0</span><span class="count-pct">0%</span></span>
+        <span class="bar-fill"><img src="/img/tim-tam.png" alt="TimTam chocolate biscuit bar" width="625" height="191"></span>
+        <span class="label">TimTam</span>
+      </button>
+    </div>
+
+    <p class="note" id="note" role="status"></p>
+  </main>
+  <footer>One vote each. Results update live.</footer>
+</body>
+</html>

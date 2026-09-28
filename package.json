@@ -1,0 +1,20 @@
+{
+  "name": "timtam",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Penguin vs TimTam: vote for the better chocolate biscuit bar",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "pg": "^8.23.0"
+  }
+}
